@@ -1,0 +1,36 @@
+[ ] Form is 'novalidate'
+
+[ ] Live inline validation 
+    [ ] Create a span to house the error message 
+    [ ] Highlights field red until it is correct
+        [ ] use "input" event listener
+        [ ] use a "showError" function
+            [ ] update span with custom messages per error 
+            [ ] add "error active" to the span  
+
+
+[ ] Email input[type='email']
+    [ ] required
+    [ ] typeMismatch
+
+[ ] Country input[type='text']
+    [ ] required
+    [ ] typeMismatch
+
+[ ] Zip Code input[type='number']
+    [ ] required
+    [ ] typeMismatch
+    [ ] minlength = 5
+    [ ] maxlength = 5
+
+[ ] Password input[type='password']
+    [ ] required
+    [ ] minlength = 8
+    [ ] maxlength = 16
+
+[ ] Password Confirmation 
+    [ ] required
+    [ ] must match password
+
+
+[ ] Style validations with :valid and :invalid pseudo-classes 

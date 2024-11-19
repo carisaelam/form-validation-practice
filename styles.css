@@ -31,6 +31,11 @@ form {
   flex-direction: column;
 }
 
+form label {
+    display: flex;
+    flex-direction: column;
+}
+
 form label p {
   margin: 1rem 0 0.25rem;
 }

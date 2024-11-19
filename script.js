@@ -18,12 +18,30 @@ const confirmPasswordError = document.querySelector(
   '#confirm-password + span.error'
 );
 
+const errors = document.querySelectorAll('span.error');
+const errorMessages = document.querySelector('.error__messages');
+
 // Event Listeners
 
 // Form
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  console.log('form submit clicked');
+
+  let errorMessagesArray = [];
+
+  errors.forEach((error) => {
+    if (error.textContent !== '') {
+      errorMessagesArray.push(error.textContent);
+    }
+  });
+
+  console.log('errorMessagesArray', errorMessagesArray);
+
+  if (errorMessagesArray.length === 0) {
+    alert('Form submitted! 👍🏼');
+  } else {
+    alert(`There are ${errorMessagesArray.length} error(s).`);
+  }
 });
 
 // Email
@@ -75,7 +93,7 @@ confirmPassword.addEventListener('input', (e) => {
   if (confirmPassword.value === password.value) {
     confirmPasswordError.textContent = '';
     confirmPasswordError.className = 'error';
-    confirmPassword.className = 'error active'
+    confirmPassword.className = 'error active';
     console.log('valid');
   } else {
     confirmPasswordError.textContent = 'Passwords must match';

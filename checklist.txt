@@ -1,36 +1,36 @@
 [x] Form is 'novalidate'
 
-[ ] Live inline validation 
-    [ ] Create a span to house the error message 
-    [ ] Highlights field red until it is correct
-        [ ] use "input" event listener
-        [ ] use a "showError" function
-            [ ] update span with custom messages per error 
-            [ ] add "error active" to the span  
+[x] Live inline validation 
+    [x] Create a span to house the error message 
+    [x] Highlights field red until it is correct
+        [x] use "input" event listener
+        [x] use a "showError" function
+            [x] update span with custom messages per error 
+            [x] add "error active" to the span  
 
 
-[ ] Email input[type='email']
-    [ ] required
-    [ ] typeMismatch
+[x] Email input[type='email']
+    [x] required
+    [x] typeMismatch
 
-[ ] Country input[type='text']
-    [ ] required
-    [ ] typeMismatch
+[x] Country input[type='text']
+    [x] required
+    [x] typeMismatch
 
-[ ] Zip Code input[type='number']
-    [ ] required
-    [ ] typeMismatch
-    [ ] minlength = 5
-    [ ] maxlength = 5
+[x] Zip Code input[type='number']
+    [x] required
+    [x] typeMismatch
+    [x] minlength = 5
+    [x] maxlength = 5
 
-[ ] Password input[type='password']
-    [ ] required
-    [ ] minlength = 8
-    [ ] maxlength = 16
+[x] Password input[type='password']
+    [x] required
+    [x] minlength = 8
+    [x] maxlength = 16
 
-[ ] Password Confirmation 
-    [ ] required
-    [ ] must match password
+[x] Password Confirmation 
+    [x] required
+    [x] must match password
 
 
-[ ] Style validations with :valid and :invalid pseudo-classes 
+[x] Style validations with :valid and :invalid pseudo-classes 

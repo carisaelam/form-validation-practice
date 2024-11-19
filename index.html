@@ -43,9 +43,10 @@
         <label for="zipcode">
           <p>Zip Code:</p>
           <input
-            type="number"
+            type="text"
             id="zipcode"
             required
+            pattern="\d{5}"
             minlength="5"
             maxlength="5"
             autocomplete="on"

@@ -17,7 +17,7 @@ body {
   align-items: center;
 }
 
-input:invalid {
+input:invalid, input.invalid {
   border: 1px red solid;
   background-color: rgba(255, 0, 0, 0.226);
 }

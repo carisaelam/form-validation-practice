@@ -31,9 +31,8 @@ form {
   flex-direction: column;
 }
 
-form label,
-form button {
-  margin-top: 1rem;
+form label p {
+  margin: 1rem 0 0.25rem;
 }
 
 form input {

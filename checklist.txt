@@ -1,4 +1,4 @@
-[ ] Form is 'novalidate'
+[x] Form is 'novalidate'
 
 [ ] Live inline validation 
     [ ] Create a span to house the error message 

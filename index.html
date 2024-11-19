@@ -14,57 +14,72 @@
     <main>
       <form novalidate>
         <!-- Email -->
-        <label for="email">Email: </label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          required
-          autocomplete="on"
-        />
+        <label for="email">
+          <p>Email:</p>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            autocomplete="on"
+          />
+          <span class="error" aria-live="polite"></span>
+        </label>
 
         <!-- Country -->
-        <label for="country">Country: </label>
-        <input
-          type="text"
-          name="country"
-          id="country"
-          autocomplete="on"
-          required
-        />
+        <label for="country">
+          <p>Country:</p>
+          <input
+            type="text"
+            name="country"
+            id="country"
+            autocomplete="on"
+            required
+          />
+          <span class="error" aria-live="polite"></span>
+        </label>
 
         <!-- Zip Code -->
-        <label for="zipcode">Zip Code: </label>
-        <input
-          type="number"
-          id="zipcode"
-          required
-          minlength="5"
-          maxlength="5"
-          autocomplete="on"
-        />
+        <label for="zipcode">
+          <p>Zip Code:</p>
+          <input
+            type="number"
+            id="zipcode"
+            required
+            minlength="5"
+            maxlength="5"
+            autocomplete="on"
+          />
+          <span class="error" aria-live="polite"></span>
+        </label>
 
         <!-- Password -->
-        <label for="password">Password: </label>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          required
-          minlength="8"
-          maxlength="16"
-          autocomplete="on"
-        />
+        <label for="password">
+          <p>Password:</p>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            required
+            minlength="8"
+            maxlength="16"
+            autocomplete="on"
+          />
+          <span class="error" aria-live="polite"></span>
+        </label>
 
         <!-- Password Confirmation -->
-        <label for="confirm-password">Confirm Password: </label>
-        <input
-          type="password"
-          name="confirm-password"
-          id="confirm-password"
-          required
-          autocomplete="on"
-        />
+        <label for="confirm-password">
+          <p>Confirm Password:</p>
+          <input
+            type="password"
+            name="confirm-password"
+            id="confirm-password"
+            required
+            autocomplete="on"
+          />
+          <span class="error" aria-live="polite"></span>
+        </label>
 
         <button>Submit</button>
       </form>

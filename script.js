@@ -29,6 +29,12 @@ form.addEventListener('submit', (e) => {
 
   let errorMessagesArray = [];
 
+  [email, country, zipcode, password, confirmPassword].forEach((input) => {
+    if (!input.validity.valid) {
+      showError(input);
+    }
+  });
+
   errors.forEach((error) => {
     if (error.textContent !== '') {
       errorMessagesArray.push(error.textContent);
